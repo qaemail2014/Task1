@@ -112,12 +112,36 @@ namespace ConsoleApplication1
       }
 
 
-      public void sumParPlane()
+      public double getSumCapacuty()
       {
-          public double sumCapacuty;
-          public double sumDimensions;
+          double sumCapacuty = 0;
+          foreach (Plane sumCapacutyElements in plane)
+      {
+          sumCapacuty = sumCapacuty + sumCapacutyElements.getCapacity();
+      }
+          return sumCapacuty;
+      }
 
-      
+
+      public double getSumDimensions()
+      {
+          double sumDimensions=0;
+          foreach (Plane sumDimensionsElements in plane)
+      {
+          sumDimensions = sumDimensions + sumDimensionsElements.getDimensions();
+      }
+          return sumDimensions;
+      }
+
+
+      public double getSumRange()
+      {
+          double sumRange = 0;
+          foreach (Plane sumRangeElements in plane)
+          {
+              sumRange = sumRange + sumRangeElements.getRange();
+          }
+          return sumRange;
       }
 
 
@@ -128,7 +152,7 @@ namespace ConsoleApplication1
       {
       if (element.getCapacity()>=lowLimit && element.getCapacity()<=hightLimit)
       {
-          Console.WriteLine("Грузоподъёмность саолёта = {0}, габариты самолёта = {1}, дальность полёта самолёта = {2}", element.getCapacity(), element.getDimensions, element.getRange);
+          Console.WriteLine("Грузоподъёмность саолёта = {0}, габариты самолёта = {1}, дальность полёта самолёта = {2}", element.getCapacity(), element.getDimensions(), element.getRange());
           counter++;
       }
       }
@@ -146,7 +170,7 @@ namespace ConsoleApplication1
           {
               if (element.getDimensions() >= lowLimit && element.getDimensions() <= hightLimit)
               {
-                  Console.WriteLine("Грузоподъёмность саолёта = {0}, габариты самолёта = {1}, дальность полёта самолёта = {2}", element.getCapacity(), element.getDimensions, element.getRange);
+                  Console.WriteLine("Грузоподъёмность саолёта = {0}, габариты самолёта = {1}, дальность полёта самолёта = {2}", element.getCapacity(), element.getDimensions(), element.getRange());
                   counter++;
               }
           }
@@ -157,20 +181,20 @@ namespace ConsoleApplication1
       }
 
 
-      public void findByDimensions(double lowLimit, double hightLimit)
+      public void findByRange (double lowLimit, double hightLimit)
       {
           int counter = 0;
           foreach (Plane element in plane)
           {
-              if (element.getDimensions() >= lowLimit && element.getDimensions() <= hightLimit)
+              if (element.getRange() >= lowLimit && element.getRange() <= hightLimit)
               {
-                  Console.WriteLine("Грузоподъёмность саолёта = {0}, габариты самолёта = {1}, дальность полёта самолёта = {2}", element.getCapacity(), element.getDimensions, element.getRange);
+                  Console.WriteLine("Грузоподъёмность саолёта = {0}, габариты самолёта = {1}, дальность полёта самолёта = {2}", element.getCapacity(), element.getDimensions(), element.getRange());
                   counter++;
               }
           }
           if (counter == 0)
           {
-              Console.WriteLine("Подходящий самолётов по габаритам не найдено");
+              Console.WriteLine("Подходящий самолётов по дальности полёта не найдено");
           }
       }
 
