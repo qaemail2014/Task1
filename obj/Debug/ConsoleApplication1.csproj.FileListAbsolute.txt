@@ -4,3 +4,9 @@ D:\Trainings\NET\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplic
 D:\Trainings\NET\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
 D:\Trainings\NET\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 D:\Trainings\NET\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+D:\Trainings\Test\Lecture2\Task1\bin\Debug\ConsoleApplication1.exe.config
+D:\Trainings\Test\Lecture2\Task1\obj\Debug\ConsoleApplication1.exe
+D:\Trainings\Test\Lecture2\Task1\obj\Debug\ConsoleApplication1.pdb
+D:\Trainings\Test\Lecture2\Task1\bin\Debug\ConsoleApplication1.exe
+D:\Trainings\Test\Lecture2\Task1\bin\Debug\ConsoleApplication1.pdb
+D:\Trainings\Test\Lecture2\Task1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache

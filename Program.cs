@@ -13,7 +13,8 @@ namespace ConsoleApplication1
         public double dimensions;
         public double range;
 
-        public void PlaneOOP(double capacity, double dimensions, double range)
+        
+        public void PlaneOOP (double capacity, double dimensions, double range)
         {
             this.capacity = capacity;
             this.dimensions = dimensions;
@@ -112,14 +113,26 @@ namespace ConsoleApplication1
       }
 
 
-      public double getSumCapacuty()
+      public void createPlain()
       {
-          double sumCapacuty = 0;
-          foreach (Plane sumCapacutyElements in plane)
-      {
-          sumCapacuty = sumCapacuty + sumCapacutyElements.getCapacity();
+          Random rand = new Random();
+          for (int i = 0; i < plane.Length; i++)
+          {
+              plane[i] = new Plane (rand.NextDouble() + 4, rand.NextDouble() * 3, rand.NextDouble() * i);
+          }
+
+
       }
-          return sumCapacuty;
+
+
+      public double getSumCapacity()
+      {
+          double sumCapacity = 0;
+          foreach (Plane sumCapacityElements in plane)
+      {
+          sumCapacity = sumCapacity + sumCapacityElements.getCapacity();
+      }
+          return sumCapacity;
       }
 
 
